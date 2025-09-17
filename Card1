@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 결혼합니다</title>
+  <style>
+    body {
+      font-family: 'Helvetica', 'Apple SD Gothic Neo', sans-serif;
+      margin: 0;
+      background: #fffaf6;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .cover {
+      background: #ff8a80; /* 이미지 없을 때 기본 배경색 */
+      height: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin: 20px 0 10px;
+    }
+    .date {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .message {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #ff8a80;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin: 5px;
+    }
+    .btn:hover {
+      background: #ff6f61;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ✅ 표지 영역 -->
+    <div class="cover">
+      Yeonju ❤️ Minho
+    </div>
+    <!-- 
+      👉 이미지를 넣고 싶다면:
+      .cover { background: url("main.jpg") center/cover no-repeat; }
+      로 수정하고 main.jpg 파일을 같은 폴더에 업로드하세요
+    -->
+
+    <!-- ✅ 인사말 -->
+    <div class="section">
+      <h1>우리 결혼합니다</h1>
+      <p class="date">2025년 11월 1일 토요일 오후 2시</p>
+      <div class="message">
+        저희 두 사람이 사랑으로 하나 되는 자리에<br>
+        귀한 발걸음을 해주신다면 큰 기쁨이겠습니다.<br>
+        따뜻한 마음으로 함께해 주세요.
+      </div>
+    </div>
+
+    <!-- ✅ 신랑 신부 소개 -->
+    <div class="section">
+      <h2>신랑 & 신부</h2>
+      <p>신랑 민호 · 신부 연주</p>
+      <!-- 
+        👉 두 분 사진을 넣고 싶다면:
+        <img src="couple.jpg" alt="신랑 신부 사진" style="width:100%; border-radius:15px; margin-top:15px;">
+      -->
+    </div>
+
+    <!-- ✅ 장소 안내 -->
+    <div class="section">
+      <h2>오시는 길</h2>
+      <p>서울시 강남구 ○○웨딩홀 3층</p>
+      <!-- 
+        👉 구글 지도 iframe 코드 붙여넣기 
+        (구글 지도 → 공유 → 지도 퍼가기 → iframe 코드 복사)
+      -->
+      <iframe src=""></iframe>
+    </div>
+
+    <!-- ✅ 연락 버튼 -->
+    <div class="section">
+      <a href="tel:010-1234-5678" class="btn">신랑에게 연락</a>
+      <a href="tel:010-9876-5432" class="btn">신부에게 연락</a>
+    </div>
+
+  </div>
+</body>
+</html>
